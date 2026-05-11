@@ -90,15 +90,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     links: [
       {
         rel: "icon",
-        type: "image/jpeg",
-        href: "/logo.jpeg?v=1",
-        sizes: "16x16",
-      },
-      {
-        rel: "icon",
-        type: "image/jpeg",
-        href: "/logo.jpeg?v=1",
-        sizes: "32x32",
+        type: "image/svg+xml",
+        href: "/favicon.svg",
       },
       {
         rel: "icon",
@@ -107,13 +100,13 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         sizes: "any",
       },
       {
+        rel: "shortcut icon",
+        href: "/favicon.svg",
+      },
+      {
         rel: "apple-touch-icon",
         href: "/logo.jpeg?v=1",
         sizes: "180x180",
-      },
-      {
-        rel: "shortcut icon",
-        href: "/logo.jpeg?v=1",
       },
       {
         rel: "stylesheet",
