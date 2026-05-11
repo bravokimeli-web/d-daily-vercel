@@ -2,10 +2,7 @@
   "buildCommand": "npm run vercel-build",
   "installCommand": "npm install",
   "framework": null,
-  "routes": [
-    { "src": "/assets/(.*)", "dest": "/assets/$1" },
-    { "src": "/(.*)", "dest": "/api/index.ts" }
-  ],
+  "outputDirectory": "public",
   "headers": [
     {
       "source": "/assets/(.*)",
