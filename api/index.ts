@@ -36,7 +36,8 @@ function getMimeType(filePath: string) {
 
 async function tryServeStaticFile(pathname: string) {
   const publicDir = path.join(process.cwd(), "public");
-  const safePath = pathname.replace(/^\//, "");
+  const decodedPath = decodeURIComponent(pathname);
+  const safePath = decodedPath.replace(/^\//, "");
   const filePath = path.join(publicDir, safePath);
   const normalized = path.normalize(filePath);
 
